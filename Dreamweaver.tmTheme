@@ -12,21 +12,93 @@
 	<string>Dreamweaver</string>
 	<key>settings</key>
 	<array>
-		<!-- Esta é uma configuração de cores para o BracketHighlighter -->
 		<dict>
-		    <key>name</key>
-		    <string>Bracket Tag</string>
-		    <key>scope</key>
-		    <string>brackethighlighter.tag</string>
-		    <key>settings</key>
-		    <dict>
+			<key>name</key>
+			<string>Bracket Tag</string>
+			<key>scope</key>
+			<string>brackethighlighter.tag</string>
+			<key>settings</key>
+			<dict>
 				<key>background</key>
 				<string>#dedede</string>
 				<key>foreground</key>
 				<string>#555555</string>
-		    </dict>
+			</dict>
 		</dict>
-		<!-- A configuração de cores do BracketHighlighter vem até aqui -->
+		<dict>
+			<key>name</key>
+			<string>Bracket Curly</string>
+			<key>scope</key>
+			<string>brackethighlighter.curly</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFFFFF</string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bracket Round</string>
+			<key>scope</key>
+			<string>brackethighlighter.round</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFFFFF</string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bracket Square</string>
+			<key>scope</key>
+			<string>brackethighlighter.square</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFFFFF</string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bracket Angle</string>
+			<key>scope</key>
+			<string>brackethighlighter.angle</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFFFFF</string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bracket Quote</string>
+			<key>scope</key>
+			<string>brackethighlighter.quote</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#dedede</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bracket Unmatched</string>
+			<key>scope</key>
+			<string>brackethighlighter.unmatched</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff0000</string>
+			</dict>
+		</dict>
 		<dict>
 			<key>settings</key>
 			<dict>
@@ -202,24 +274,13 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>js meta function</string>
-			<key>scope</key>
-			<string>source.js meta.function - source.php</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#000000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>js instance &#x2f; support.function</string>
 			<key>scope</key>
 			<string>source.js meta.class - source.php, source.js support.function - source.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#24C696</string>
+				<string>#DB920B</string>
 			</dict>
 		</dict>
 		<dict>
@@ -405,7 +466,7 @@
 			<key>name</key>
 			<string>php</string>
 			<key>scope</key>
-			<string>source.php - punctuation.section, source.php meta.function.php entity.name.function.php</string>
+			<string>source.php - punctuation.section, source.php meta.function.php entity.name.function.php, source.php meta.function-call.php variable.function.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -449,7 +510,7 @@
 			<key>name</key>
 			<string>php keyword general &#x2f; storage misc</string>
 			<key>scope</key>
-			<string>source.php keyword - comment, source.php storage.type.class, source.php storage.type.interface, source.php storage.modifier, source.php constant.language, source.php keyword</string>
+			<string>source.php keyword - comment, source.php storage.type.class, source.php storage.type.interface, source.php storage.modifier, source.php constant.language, source.php keyword, source.php meta.function-call.method.php variable.function.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -641,11 +702,13 @@
 			<key>name</key>
 			<string>sql backtick</string>
 			<key>scope</key>
-			<string>source.sql string.quoted.other.backtick.sql</string>
+			<string>source.sql string.quoted.other.backtick.sql, source.php meta.item-access.arguments.php string.quoted.single.php meta.string-contents.quoted.single.php,  source.php meta.item-access.arguments.php string.quoted.single.php punctuation.definition.string.begin.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#8600AB</string>
+				<key>fontStyle</key>
+				<string> italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -670,6 +733,28 @@
 			<dict>
 				<key>foreground</key>
 				<string>#8A1313</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>js object dom</string>
+			<key>scope</key>
+			<string>support.type.object.dom.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A32AAD</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>js dolar</string>
+			<key>scope</key>
+			<string>variable.function.js variable.other.dollar.only.js punctuation.dollar.js, source.js meta.block.js meta.conditional.js meta.block.js meta.function-call.method.js meta.group.js meta.block.js meta.conditional.js meta.block.js meta.function-call.method.js variable.function.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
 			</dict>
 		</dict>
 	</array>
